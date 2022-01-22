@@ -14,7 +14,7 @@ a:hover{
 
 html {
     overflow: scroll;
-    overflow-x: hidden;
+    
     
 }
 ::-webkit-scrollbar {
@@ -34,22 +34,22 @@ html {
 }
 
 .profile-body{
-    margin:0;
+    /* margin:0;
     background: linear-gradient(to right top, #0089f2 50%, #DDD 50%);
     background-size: 100% calc(100% - 100vh + 129px);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 
 .profile-body::before{
-    content:'';
+    /* content:'';
     position: fixed;
     top: 128px;
     bottom: 0;
     width: 100%;
     height:100%;
     z-index: -1;
-    background-color:#ffffff;
+    background-color:#ffffff; */
 }
 
 /*-----------------------------Containers Section-----------------------------*/
@@ -61,21 +61,56 @@ html {
     width:100%;
 }
 
-.flex-container2{
+.flex-container-outer{
     display: flex;
-    padding-left: 20px;
-    margin-top: 140px;
-    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     /* background: linear-gradient(180deg, #ffffff 0%, #cec095 51%, #000000 75%); */
     /* background-color: black; */
 }
 
-.header-container{
-	position: fixed;
-	top:0;
-	height: 125px;
-	width: 100%;
-	background: white;
+.flex-container-outer i{
+    padding: 20px;
+}
+
+.right-container{
+    overflow: hidden;
+    /* background-color: rgb(151, 151, 77); */
+    height: 700px;
+    scroll-behavior: smooth;
+}
+
+#profile{
+    display:flex;
+    width:100%;
+    height: 700px;
+}
+
+#early-life{
+    display:flex;
+    width:100%;
+    height: 700px;
+}
+
+#profile div{
+    padding: 10px;
+}
+
+#early-life div{
+    padding: 10px;
+}
+
+.right-container-text{
+    margin-top:50px;
+    text-align: justify;
+}
+
+.right-container-text2{
+    margin-right:10px;
+    margin-top:110px;
+    text-align: justify;
 }
 
 /*-----------------------------Image Section-----------------------------*/
@@ -85,8 +120,21 @@ html {
 }
 
 .img-profile{
-    width: 30%;
-    height: 30%;
+    margin-top:10%;
+    /* margin-left: 5%; */
+    width: 375px;
+    height: auto;
+    /* height: auto; */
+    filter:drop-shadow(12px 12px 25px rgba(0,0,0,0.3));
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.3));
+}
+
+.img-early-life{
+    margin-top:10%;
+    width: 375px;
+    height: auto;
+    filter: drop-shadow(-20px 20px 25px rgba(0,0,0,0.4));
+    -webkit-filter: drop-shadow(-20px 20px 25px rgba(0,0,0,0.4));
 }
 
 
@@ -106,9 +154,9 @@ html {
 
 #title-text2{
     width:fit-content;
-    margin:0;
+    margin-top:20px;
     padding:0;
-    font-size: 70px;
+    font-size: 100px;
     font-family: League Spartan;
     
 }
@@ -116,6 +164,11 @@ html {
 #title-text2:hover{
     cursor: pointer;
     color:rgb(190, 92, 92);
+}
+
+.bold-text{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .bubbles{
