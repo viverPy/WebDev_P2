@@ -13,9 +13,7 @@ a:hover{
 /*-----------------------------Scrollbar Section-----------------------------*/
 
 html {
-    overflow: scroll;
-    
-    
+    overflow: hidden;
 }
 ::-webkit-scrollbar {
     width: 0;
@@ -33,25 +31,6 @@ html {
     margin:0;
 }
 
-.profile-body{
-    /* margin:0;
-    background: linear-gradient(to right top, #0089f2 50%, #DDD 50%);
-    background-size: 100% calc(100% - 100vh + 129px);
-    background-repeat: no-repeat; */
-}
-
-
-.profile-body::before{
-    /* content:'';
-    position: fixed;
-    top: 128px;
-    bottom: 0;
-    width: 100%;
-    height:100%;
-    z-index: -1;
-    background-color:#ffffff; */
-}
-
 /*-----------------------------Containers Section-----------------------------*/
 .flex-container{
     display: flex;
@@ -67,8 +46,10 @@ html {
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-bottom:100px;
     /* background: linear-gradient(180deg, #ffffff 0%, #cec095 51%, #000000 75%); */
     /* background-color: black; */
+    border-right:1px solid black;
 }
 
 .flex-container-outer i{
@@ -80,6 +61,7 @@ html {
     /* background-color: rgb(151, 151, 77); */
     height: 700px;
     scroll-behavior: smooth;
+    
 }
 
 #profile{
@@ -94,6 +76,28 @@ html {
     height: 700px;
 }
 
+#education{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height: 700px;
+    align-items: center;
+}
+
+#career{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height: 700px;
+    align-items: center;
+}
+
+#death{
+    display:flex;
+    width:100%;
+    height: 700px;
+}
+
 #profile div{
     padding: 10px;
 }
@@ -102,15 +106,12 @@ html {
     padding: 10px;
 }
 
-.right-container-text{
-    margin-top:50px;
-    text-align: justify;
+#education div{
+    padding: 10px;
 }
 
-.right-container-text2{
-    margin-right:10px;
-    margin-top:110px;
-    text-align: justify;
+#career div{
+    padding: 10px;
 }
 
 /*-----------------------------Image Section-----------------------------*/
@@ -135,6 +136,30 @@ html {
     height: auto;
     filter: drop-shadow(-20px 20px 25px rgba(0,0,0,0.4));
     -webkit-filter: drop-shadow(-20px 20px 25px rgba(0,0,0,0.4));
+}
+
+.img-education{
+    margin-top:10%;
+    width: 400px;
+    height: auto;
+    filter:drop-shadow(12px 12px 25px rgba(0,0,0,0.3));
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.3));
+}
+
+.img-career{
+    margin-top:10%;
+    width: 375px;
+    height: auto;
+    filter:drop-shadow(12px 12px 25px rgba(0,0,0,0.3));
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.3));
+}
+
+.img-death{
+    margin-top:10%;
+    width: 330px;
+    height: auto;
+    filter:drop-shadow(12px 12px 10px rgba(0,0,0,0.3));
+    -webkit-filter: drop-shadow(12px 12px 10px rgba(0,0,0,0.3));
 }
 
 
@@ -170,6 +195,50 @@ html {
     font-size: 20px;
     font-weight: bold;
 }
+
+.right-container-profile-text{
+    margin-top:50px;
+    text-align: justify;
+}
+
+.right-container-early-life-text{
+    margin-right:10px;
+    margin-top:110px;
+    text-align: justify;
+}
+
+.right-container-education-text{
+    text-align: justify;
+}
+
+.right-container-career-text{
+    text-align: justify;
+}
+
+.right-container-death-text{
+    margin-left:20px;
+    margin-top:30px;
+    text-align: justify;
+}
+
+.navigation-text{
+    font-size:25px;
+    padding:15px;
+    transition: transform .1s;
+}
+
+.navigation-text:hover{
+    font-size:25px;
+    padding:15px;
+    transform: scale(1.5);
+    transition: transform .2s;
+}
+
+.navigation-text:focus{
+    color:rgb(248, 150, 150);
+}
+
+/*-----------------------------List Section-----------------------------*/
 
 .bubbles{
     position: absolute;
@@ -218,6 +287,7 @@ html {
 .bubbles li:hover{
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
+    cursor: pointer;
 }
 
 .bubbles li:nth-child(1){
@@ -226,9 +296,6 @@ html {
     left: 20%;
     animation-delay: 5s;
     animation-duration: 19s;
-}
-.bubbles li:nth-child(1):hover{
-    
 }
 
 .bubbles li:nth-child(2){
@@ -289,5 +356,44 @@ html {
         -webkit-transform: translateY(-1830px) rotate(630deg);
         transform: translateY(-1830px) rotate(180deg);
         
+    }
+}
+
+.fade-item {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
     }
 }

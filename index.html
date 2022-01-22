@@ -4,26 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel = "stylesheet" href = "style.css"></link>
     <title>Fernando Amorsolo</title>
 </head>
 <body class = "index-body">
     <div class = "flex-container">
-        <h1 id = "title-text"> <a href = "profile.html">WHO IS <br> FERNANDO AMORSOLO </a></h1>
+        <h1 class = "fade-item animatedFadeInUp fadeInUp" id = "title-text"> <a href = "profile.html">WHO IS <br> FERNANDO AMORSOLO </a></h1>
     </div>
-
     <ul class = "bubbles">
-        <li><img class = "img-paint" src = "https://image.invaluable.com/housePhotos/christies/00/289200/H0027-L17051937.jpg"></li>
-        <li><img class = "img-paint" src = "https://1.bp.blogspot.com/-zvF5I0qJYig/XRahJn7-7gI/AAAAAAAGbj8/qf4RqaHPZykP9paPmlEB6VKGg9tLgpEEwCLcBGAs/w1200-h630-p-k-no-nu/Fernando-Amorsolo-Harvesting-at-sunset.jpg"></li>
-        <li><img class = "img-paint" src = "https://3.bp.blogspot.com/-q6pZBqi5UV4/WAnZsTjqEvI/AAAAAAAAFeg/FhLH2J5o2xUdcevxjJ7qyKEqKBIzChszgCK4B/s1600/24-10-%2BFernando%2BAmorsolo-%2BMount%2BPinatubo%2B%25281486m%2529%2Bbefore%2Beuotion%2Bin%2B1938.jpg"></li>
-        <li><img class = "img-paint" src = "https://media.mutualart.com/Images//2013_11/09/20/202826826/ff334e77-731f-4604-8c47-fbb154ea9b35.Jpeg"></li>
-        <li><img class = "img-paint" src = "https://media.mutualart.com/Images//2009_07/06/0098/474265/602c424e-9070-4b92-a9f9-295f77a634c7_g.Jpeg"></li>
-        <li><img class = "img-paint" src = "https://media.mutualart.com/Images/2010_11/16/0022/1018524/129342974062464951_d45ba3ba-8921-4495-976a-d4c7c0df53db_232406_570.Jpeg"></li>
-        <li><img class = "img-paint" src = "https://i.pinimg.com/originals/5d/c8/1e/5dc81ee60a8aff6f4d6105fdcf3d8e47.jpg"></li>
-        <li><img class = "img-paint" src = "https://www.tobinreese.com/uploads/1/3/1/8/13183818/096-1_2_orig.jpg"></li>
+        <li onclick="document.getElementById('id01').style.display='block'"><img class = "img-paint" src = "https://image.invaluable.com/housePhotos/christies/00/289200/H0027-L17051937.jpg"></li>
+        <li onclick="document.getElementById('id02').style.display='block'"><img class = "img-paint" src = "https://1.bp.blogspot.com/-zvF5I0qJYig/XRahJn7-7gI/AAAAAAAGbj8/qf4RqaHPZykP9paPmlEB6VKGg9tLgpEEwCLcBGAs/w1200-h630-p-k-no-nu/Fernando-Amorsolo-Harvesting-at-sunset.jpg"></li>
+        <li onclick="document.getElementById('id03').style.display='block'"><img class = "img-paint" src = "https://3.bp.blogspot.com/-q6pZBqi5UV4/WAnZsTjqEvI/AAAAAAAAFeg/FhLH2J5o2xUdcevxjJ7qyKEqKBIzChszgCK4B/s1600/24-10-%2BFernando%2BAmorsolo-%2BMount%2BPinatubo%2B%25281486m%2529%2Bbefore%2Beuotion%2Bin%2B1938.jpg"></li>
+        <li onclick="document.getElementById('id04').style.display='block'"><img class = "img-paint" src = "https://media.mutualart.com/Images//2013_11/09/20/202826826/ff334e77-731f-4604-8c47-fbb154ea9b35.Jpeg"></li>
+        <li onclick="document.getElementById('id05').style.display='block'"><img class = "img-paint" src = "https://media.mutualart.com/Images//2009_07/06/0098/474265/602c424e-9070-4b92-a9f9-295f77a634c7_g.Jpeg"></li>
+        <li onclick="document.getElementById('id06').style.display='block'"><img class = "img-paint" src = "https://media.mutualart.com/Images/2010_11/16/0022/1018524/129342974062464951_d45ba3ba-8921-4495-976a-d4c7c0df53db_232406_570.Jpeg"></li>
+        <li onclick="document.getElementById('id07').style.display='block'"><img class = "img-paint" src = "https://i.pinimg.com/originals/5d/c8/1e/5dc81ee60a8aff6f4d6105fdcf3d8e47.jpg"></li>
+        <li onclick="document.getElementById('id08').style.display='block'"><img class = "img-paint" src = "https://www.tobinreese.com/uploads/1/3/1/8/13183818/096-1_2_orig.jpg"></li>
     </ul>
 
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-opacity w3-card-4">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <p><span class = "bold-text">Title: </span>Rice planting , 1951</p>
+            <p><span class = "bold-text">Artist: </span>Fernando Amorsolo (Filipino, 1892–1972)</p>
+            <p><span class = "bold-text">Medium: </span>oil on canvas</p>
+            <p><span class = "bold-text">Size: </span>24.4 x 34.1 in.</p>
+          </div>
+        </div>
+      </div>
 
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-opacity w3-card-4">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id02').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <p><span class = "bold-text">Title: </span>Harvesting at Sunset , 1935</p>
+            <p><span class = "bold-text">Artist: </span>Fernando Amorsolo (Filipino, 1892–1972)</p>
+            <p><span class = "bold-text">Medium: </span>oil on canvas laid on board</p>
+            <p><span class = "bold-text">Size: </span>19.1 x 26.2 in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="id03" class="w3-modal">
+        <div class="w3-modal-content w3-animate-opacity w3-card-4">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id03').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <p><span class = "bold-text">Title: </span>Landscape , 1938</p>
+            <p><span class = "bold-text">Artist: </span>Fernando Amorsolo (Filipino, 1892–1972)</p>
+            <p><span class = "bold-text">Medium: </span>oil on canvas laid on board</p>
+            <p><span class = "bold-text">Size: </span>18.1 x 23.6 in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="id04" class="w3-modal">
+        <div class="w3-modal-content w3-animate-opacity w3-card-4">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id04').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <p><span class = "bold-text">Title: </span>On the Way Home , 1945</p>
+            <p><span class = "bold-text">Artist: </span>Fernando Amorsolo (Filipino, 1892–1972)</p>
+            <p><span class = "bold-text">Medium: </span>oil on canvas</p>
+            <p><span class = "bold-text">Size: </span>12.2 x 15.7 in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="id05" class="w3-modal">
+        <div class="w3-modal-content w3-animate-opacity w3-card-4">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id05').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <p><span class = "bold-text">Title: </span>Figures by the sea , 1940</p>
+            <p><span class = "bold-text">Artist: </span>Fernando Amorsolo (Filipino, 1892–1972)</p>
+            <p><span class = "bold-text">Medium: </span>oil on canvas</p>
+            <p><span class = "bold-text">Size: </span>24.4 x 34.3 in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="id06" class="w3-modal">
+        <div class="w3-modal-content w3-animate-opacity w3-card-4">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id06').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <p><span class = "bold-text">Title: </span>Ocean sunset , 1937</p>
+            <p><span class = "bold-text">Artist: </span>Fernando Amorsolo (Filipino, 1892–1972)</p>
+            <p><span class = "bold-text">Medium: </span>oil on panel</p>
+            <p><span class = "bold-text">Size: </span>18.1 x 24.8 in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="id07" class="w3-modal">
+        <div class="w3-modal-content w3-animate-opacity w3-card-4">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id07').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <p><span class = "bold-text">Title: </span>Returning Fisherman , 1943</p>
+            <p><span class = "bold-text">Artist: </span>Fernando Amorsolo (Filipino, 1892–1972)</p>
+            <p><span class = "bold-text">Medium: </span>oil on board</p>
+            <p><span class = "bold-text">Size: </span>15 x 20 in.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="id08" class="w3-modal">
+        <div class="w3-modal-content w3-animate-opacity w3-card-4">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id08').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <p><span class = "bold-text">Title: </span>Girl with Jar , 1935</p>
+            <p><span class = "bold-text">Artist: </span>Fernando Amorsolo (Filipino, 1892–1972)</p>
+            <p><span class = "bold-text">Medium: </span>oil on canvas on board</p>
+            <p><span class = "bold-text">Size: </span>19.25 x 13 in.</p>
+          </div>
+        </div>
+      </div>
     
 </body>
 </html>
