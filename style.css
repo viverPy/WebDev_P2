@@ -173,6 +173,7 @@ html {
     height: 17%;
     width:auto;
     opacity:0;  
+    z-index:1;
 }
 
 /*-----------------------------Text Section-----------------------------*/
@@ -480,15 +481,22 @@ html {
 @keyframes fade{
     0% {
         opacity: 0;
+        z-index:0;
     }
-    25% {
+    20% {
+        z-index:0;
         opacity: 1;
     }
-    50% {
+    40%{
+        z-index:1;
+    }
+    60% {
+        z-index:0;
         opacity: 1;
     }
-    75% {
+    80% {
         opacity: 0;
+        z-index:0;
     }
 }
 
