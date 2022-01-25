@@ -164,7 +164,6 @@ html {
 
 .fade-desgin{
     position: absolute;
-    list-style: none;
     display: block;
     border: 3px solid #ccc;
     background: #eee;
@@ -172,8 +171,7 @@ html {
     padding: 10px 5px;
     height: 17%;
     width:auto;
-    opacity:0;  
-    z-index:1;
+    opacity:0;
 }
 
 /*-----------------------------Text Section-----------------------------*/
@@ -378,91 +376,91 @@ html {
 .fade-left-1{
     left:5%;
     bottom:10%;
-    animation: fade 20s ease-in-out infinite;
+    animation: fade 20s ease-in-out 10s infinite;
 }
 .fade-left-2{
     left:5%;
     bottom:30%;
-    animation: fade 20s ease-in-out infinite;
+    animation: fade 20s ease-in-out 10s infinite;
 }
 .fade-left-3{
     left:5%;
     bottom:50%;
-    animation: fade 20s ease-in-out infinite;
+    animation: fade 20s ease-in-out 10s infinite;
 }
 .fade-left-4{
     left:5%;
     bottom:70%;
-    animation: fade 20s ease-in-out infinite;
+    animation: fade 20s ease-in-out 10s infinite;
 }
 
 .fade-left-5{
     left:5%;
     bottom:10%;
-    animation: fade 20s ease-in-out 10s infinite;
+    animation: fade 20s ease-in-out infinite;
 }
 .fade-left-6{
     left:5%;
     bottom:30%;
-    animation: fade 20s ease-in-out 10s infinite;
+    animation: fade 20s ease-in-out infinite;
 }
 .fade-left-7{
     left:5%;
     bottom:50%;
-    animation: fade 20s ease-in-out 10s infinite;
+    animation: fade 20s ease-in-out infinite;
 }
 .fade-left-8{
     left:5%;
     bottom:70%;
-    animation: fade 20s ease-in-out 10s infinite;
+    animation: fade 20s ease-in-out infinite;
 }
 
 .fade-right-1{
     right:5%;
     bottom:10%;
-    animation: fade 20s ease-in-out infinite;
+    animation: fade 20s ease-in-out 10s infinite;
 }
 
 .fade-right-2{
     right:5%;
     bottom:30%;
-    animation: fade 20s ease-in-out infinite;
+    animation: fade 20s ease-in-out 10s infinite;
 }
 
 .fade-right-3{
     right:5%;
     bottom:50%;
-    animation: fade 20s ease-in-out infinite;
+    animation: fade 20s ease-in-out 10s infinite;
 }
 
 .fade-right-4{
     right:5%;
     bottom:70%;
-    animation: fade 20s ease-in-out infinite;
+    animation: fade 20s ease-in-out 10s infinite;
 }
 
 .fade-right-5{
     right:5%;
     bottom:10%;
-    animation: fade 20s ease-in-out 10s infinite;
+    animation: fade 20s ease-in-out infinite;
 }
 
 .fade-right-6{
     right:5%;
     bottom:30%;
-    animation: fade 20s ease-in-out 10s infinite;
+    animation: fade 20s ease-in-out infinite;
 }
 
 .fade-right-7{
     right:5%;
     bottom:50%;
-    animation: fade 20s ease-in-out 10s infinite;
+    animation: fade 20s ease-in-out infinite;
 }
 
 .fade-right-8{
     right:5%;
     bottom:70%;
-    animation: fade 20s ease-in-out 10s infinite;
+    animation: fade 20s ease-in-out infinite;
 }
 
 @keyframes frame{
