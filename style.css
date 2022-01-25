@@ -261,16 +261,6 @@ html {
     transform: translateZ(0);
 }
 
-.bubbles-right{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    transform: translateZ(0);
-}
-
 .bubbles li{
     position: absolute;
     list-style: none;
@@ -476,7 +466,41 @@ html {
     }
 }
 
+@-webkit-keyframes frame{
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    100% {
+        -webkit-transform: translateY(-1830px) rotate(180deg);
+        transform: translateY(-1830px) rotate(180deg);
+        
+    }
+}
+
 @keyframes fade{
+    0% {
+        opacity: 0;
+        z-index:0;
+    }
+    20% {
+        z-index:0;
+        opacity: 1;
+    }
+    40%{
+        z-index:1;
+    }
+    60% {
+        z-index:0;
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+        z-index:0;
+    }
+}
+@-webkit-keyframes fade{
     0% {
         opacity: 0;
         z-index:0;
